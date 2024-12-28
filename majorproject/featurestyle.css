@@ -1,0 +1,281 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.hero
+{
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.lines
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+.tabs ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    list-style-type: none;
+}
+
+
+.tabs a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.tabs a:hover
+{
+    color: rgb(173, 4, 4);
+    
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3% 0px;
+}
+
+.header button
+{
+    background-color: aliceblue;
+    padding: 15px 50px;
+    border: 3px solid red;
+    font-size: 2.2rem;
+}
+
+.header button:hover
+{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/*---------------------------- Front page is ends here-------------------------------*/
+.ftr
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 40px 50px;
+}
+
+.subftr
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 600px;
+}
+
+.subftr button
+{
+    background-color: rgb(48, 45, 45);
+    border: none;
+    font-size: 1.6rem;
+    padding: 8px 35px;
+    margin: auto auto;
+    border: 2px solid red;
+    color: white;
+    border-radius: 10px;
+}
+
+.subftr button:hover
+{
+    border: 2px solid black;
+    opacity: 0.9;
+    text-decoration: underline; 
+    color: gold;
+}
+
+.text-info
+{
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    padding: 70px 100px;
+    margin: 50px 80px;
+}
+
+
+
+
+
+/*---------------------------- Footer page is starts here-------------------------------*/
+.footer
+{
+    background: url(images/footerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 5% 50px;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer h1
+{
+    color: rgb(116, 0, 0);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.footer h2
+{
+    font-size: 2rem;
+}
+
+.footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.endfooter
+{
+    background-color: black;
+    padding: 15px 0px;
+}
+/*---------------------------- Footer page is ends here-------------------------------*/
+
+
+@media(max-width:768px)
+{
+    html
+    {
+        font-size: 53%;
+    }
+
+    .tabs ul
+    {
+        display: none;
+    }
+
+    .lines
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 60%;
+    }
+
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ftr
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0px;
+        gap: 20px;
+    }
+
+    .subftr
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: auto 10px;
+        padding: 5px 10px;
+        width: 400px;
+    }
+
+    .text-info
+{
+    padding: 20px 30px;
+    margin: 10px 20px;
+}
+    
+}
+
+
+@media(max-width:425px)
+{
+    html
+    {
+        font-size: 45%;
+    }
+
+    .lines
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40%;
+    }
+
+   
+}
+
+
+@media(max-width:320px)
+{
+    html
+    {
+        font-size: 35%;
+    }
+
+    .lines
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20%;
+    }
+
+    .subftr
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: auto 10px;
+        padding: 5px 10px;
+        width: 300px;
+    }
+
+}

@@ -1,0 +1,336 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.hero
+{
+    background: url(images/carousel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.lines
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.tabs ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    list-style-type: none;
+}
+
+
+.tabs a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.tabs a:hover
+{
+    color: rgb(173, 4, 4);
+    
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 11% 0px;
+}
+
+.header button
+{
+    background-color: aliceblue;
+    padding: 15px 50px;
+    border: 3px solid red;
+    font-size: 2.2rem;
+}
+
+.header button:hover
+{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/*---------------------------- Front page is ends here-------------------------------*/
+
+.cards
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 50px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card h1
+{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card p
+{
+    font-size: 1.5rem;
+}
+
+.middle
+{
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 9% 0px;
+    margin: 30px 0px;
+}
+
+.middle button
+{
+    padding: 15px 30px;
+    border: none;
+    background-color: orangered;
+    color: wheat;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.middle button:hover
+{
+    opacity: 0.9;
+    box-shadow: 5px 5px 6px black;
+    border: 2px solid red;
+}
+
+.infocards
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 50px;
+}
+
+ .infocard
+{
+    background-color: red;
+    color: wheat;
+    padding: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer
+{
+    background: url(images/footerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 5% 50px;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer h1
+{
+    color: rgb(116, 0, 0);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.footer h2
+{
+    font-size: 2rem;
+}
+
+.footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.endfooter
+{
+    background-color: black;
+    padding: 15px 0px;
+}
+
+
+
+@media(max-width:768px)
+{
+    html
+    {
+        font-size: 53%;
+    }
+
+    .tabs
+    {
+        display: none;
+    }
+
+    .tabs ul
+    {
+        display: none;
+        padding: 30px 0px;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;     
+    }
+
+    .lines
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 60%;
+    }
+
+    .cards
+    {
+        padding: 10px 30px;
+    }
+    
+    .row
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card img
+    {
+        width: 200px;
+        height: 180px;
+    }
+
+    .infocards
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+@media(max-width:425px)
+{
+    html
+    {
+        font-size: 45%;
+    }
+
+    .lines
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40%;
+    }
+
+    .cards
+    {
+        padding: 10px 20px;
+    }
+
+}
+
+
+@media(max-width:320px)
+{
+    html
+    {
+        font-size: 35%;
+    }
+
+    .lines
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20%;
+    }
+
+    .card img
+    {
+        width: 170px;
+        height: 150px;
+    }
+
+}
